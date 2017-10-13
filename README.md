@@ -128,7 +128,7 @@ This function should be invoked with the `new` operator.
 
 ### `Spell.getStatus()`
 
-Gets the status of the global `Spell` object.
+This method gets the listening status of the global `Spell` object.
 
 
 #### Syntax
@@ -150,7 +150,7 @@ This method returns `true` if the global `Spell` object is currently listening, 
 
 ### `Spell.setStatus()`
 
-Sets the status of the global `Spell` object.
+This method sets the listening status of the global `Spell` object.
 
 
 #### Syntax
@@ -262,7 +262,7 @@ The `Spell.pronounce()` method allows to test a keyword _via code_, rather than 
 
 ### `Spell.unspellAll()`
 
-This method resets the status of a all `spell`s currently active.
+This method resets all `spell`s currently active (all matching characters typed so far will be forgotten).
 
 
 #### Syntax
@@ -376,7 +376,7 @@ This method returns `false` if the `spell` had been already enabled, `true` othe
 
 ### `Spell.prototype.unspell()`
 
-This method resets the status of a `spell`.
+This method resets a `spell` (all matching characters typed so far will be forgotten).
 
 
 #### Syntax
@@ -417,7 +417,7 @@ spell.unspell();
 
 #### Notes
 
-The `content` property of a `spell` can be edited after the `spell` has been already created. In this case, however, it might be wished to reset the status of the latter by invoking the method `spell.unspell()` as well, as in the example above, or the new keyword will take advantage of the positive status of the previous keyword if some correct characters had been already typed.
+The `content` property of a `spell` can be edited after the `spell` has been already created. In this case, however, it might be wished to reset the latter by invoking the method `spell.unspell()` as well, as in the example above, or the new keyword will take advantage of the positive status of the previous keyword if some correct characters had been already typed.
 
 
 ### `spell.ontype`
