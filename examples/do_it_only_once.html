@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="../spell.js"></script>
+<title>spell.js &ndash; Do it only once</title>
+<script type="text/javascript">
+var mySpell = new Spell("silence", function (element) {
+
+	this.disable();
+
+	alert("You have typed the word " + this.content + "! Now this keyword has been disabled and will not work anymore");
+
+});
+</script>
+</head>
+
+<body>
+
+<p>Type the word &ldquo;silence&rdquo; in any point of the page...</p>
+
+</body>
+</html>

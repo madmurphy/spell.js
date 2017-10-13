@@ -1,0 +1,20 @@
+{
+	"name": "spell.js",
+	"version": "1.0.0",
+	"description": "A simple \"keypress\" event handler that silently listens to what is typed outside of form fields",
+	"main": "spell.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/madmurphy/spell.js.git"
+	},
+	"author": "madmurphy",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/madmurphy/spell.js/issues"
+	},
+	"homepage": "https://github.com/madmurphy/spell.js"
+}
+
