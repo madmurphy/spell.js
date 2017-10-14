@@ -246,8 +246,8 @@ Spell.prototype = (function () {
 
 
 	var
-		/* const */ sListenClass = "enchanted", sForbidClass = "cursed", oDefaults = Spell.prototype,
-		oProto = Object.create(oDefaults), aActive = [],
+		/* const */ sListenClass = "enchanted", sForbidClass = "cursed", oDefault = Spell.prototype,
+		oProto = Object.create(oDefault), aActive = [],
 		/* var */ bUnlocked = true;
 
 
@@ -258,19 +258,19 @@ Spell.prototype = (function () {
 
 
 	/** @brief	The string that triggers the event **/
-	oDefaults.content = null;
+	oDefault.content = null;
 
 	/** @brief	The function that will be invoked when `spell` is completed **/
-	oDefaults.ontype = null;
+	oDefault.ontype = null;
 
 	/** @brief	The `spell` is active only on elements possessing a class that matches the string `sListenClass` **/
-	oDefaults.reticent = false;
+	oDefault.reticent = false;
 
 	/** @brief	If `true`, prevents `"keypress"` event's default actions whenever a typed character matches the `spell`'s `content` **/
-	oDefaults.noticeable = true;
+	oDefault.noticeable = true;
 
 	/** @brief	The number of correct characters consecutively typed in respect to the `content` property (opaque) **/
-	oDefaults.INDEX = 0;
+	oDefault.INDEX = 0;
 
 
 	/* `Spell` object methods */
