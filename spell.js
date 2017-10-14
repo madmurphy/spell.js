@@ -11,7 +11,7 @@
 |*|
 |*|	(c) 2017 madmurphy
 |*|
-|*|	This CSS is released under the GNU Public License, version 3 or later.
+|*|	This framework is released under the GNU Public License, version 3 or later.
 |*|	http://www.gnu.org/licenses/gpl-3.0.html
 |*|
 |*|
@@ -204,12 +204,12 @@ Spell.prototype = (function () {
 
 			nStartPos = isFinite(oThis.INDEX) && oThis.INDEX >= 0 ? Math.floor(oThis.INDEX) : 0;
 
-			oThis.INDEX		=	nChr === oThis.content.charCodeAt(nStartPos) ?
-								nStartPos + 1
-							: nChr === oThis.content.charCodeAt(0) ?
-								1
-							:
-								0;
+			oThis.INDEX	=	nChr === oThis.content.charCodeAt(nStartPos) ?
+							nStartPos + 1
+						: nChr === oThis.content.charCodeAt(0) ?
+							1
+						:
+							0;
 
 			bPrevent = bPrevent || oThis.noticeable && oThis.INDEX > (bEditable && nStartPos === 1 ? 1 : 0);
 
@@ -463,7 +463,7 @@ Spell.prototype = (function () {
 	@return		Nothing
 
 **/
-oProto.unspell = function () {
+Spell.prototype.unspell = function () {
 
 	this.INDEX = 0;
 
