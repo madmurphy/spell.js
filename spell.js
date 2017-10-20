@@ -188,7 +188,7 @@ Spell.prototype = (function () {
 
 		if (bEditable && !oEvent.target.classList.contains(sListenClass) || nChr === 0 || nRank === 2) {
 
-			return true;
+			return /* true */;
 
 		}
 
